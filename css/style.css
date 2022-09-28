@@ -366,7 +366,7 @@ body {
   margin-bottom: 10px;
 }
 
-.register-form-lable {
+.register-form-label {
   display: block;
   font-size: 12px;
   font-weight: 400;
@@ -716,7 +716,6 @@ body {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-
   /*  властивості переходу  */
   transition-property: background-color;
   transition-duration: var(--transition-duration);
@@ -725,7 +724,6 @@ body {
 
 .social-icon {
   fill: var(--socials-icon-color);
-
   /*  властивості переходу  */
   transition-property: fill;
   transition-duration: var(--transition-duration);
@@ -783,7 +781,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 92px;
-
   /*  властивості переходу  */
   transition-property: border;
   transition-duration: var(--transition-duration);
@@ -792,7 +789,6 @@ body {
 
 .client-icon {
   fill: var(--socials-icon-color);
-
   /*  властивості переходу  */
   transition-property: fill;
   transition-duration: var(--transition-duration);
@@ -942,6 +938,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   outline: transparent;
+  /*  властивості переходу  */
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .footer-input:focus {
@@ -1015,10 +1015,6 @@ body {
 .btn-filter:active {
   color: var(--background-color-light);
   background-color: var(--brand-color-main);
-}
-
-.btn-filter:hover,
-.btn-filter:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
