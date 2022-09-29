@@ -436,10 +436,15 @@ body {
   padding-left: 16px;
   padding-bottom: 12px;
   padding-right: 16px;
+  margin-bottom: 20px;
   /*  властивості переходу  */
   transition-property: border-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+}
+
+.register-form-group .register-form-message {
+  margin-bottom: 20px;
 }
 
 .register-form-comment:focus {
@@ -458,7 +463,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .icon-checked {
