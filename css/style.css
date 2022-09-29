@@ -342,6 +342,15 @@ body {
 .icon-close {
   fill: var(--logo-second-color);
   margin-right: 0;
+  /*  властивості переходу  */
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
+  fill: var(--brand-color-main);
 }
 
 .register-form {
@@ -873,7 +882,7 @@ body {
 .second-footer-conteiner {
   width: 206px;
   height: 80px;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .invite-title {
@@ -921,6 +930,7 @@ body {
 .footer-form {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .form-subscribe {
@@ -939,13 +949,13 @@ body {
   color: rgba(255, 255, 255, 0.6);
   outline: transparent;
   /*  властивості переходу  */
-  transition-property: box-shadow;
+  transition-property: box-shadow, border;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
 
 .footer-input:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--brand-color-main);
 }
 
 .footer-button-container {
